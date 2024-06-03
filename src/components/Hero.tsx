@@ -1,20 +1,22 @@
 "use client";
 import Image from "next/image";
 
-const Hero = () => {
+const Hero = ({ url, alt, left }: any) => {
   return (
     <>
       <div className="flex items-center">
-        <div>
-          <Image
-            className=""
-            src="/teletech2.png"
-            alt="Teletechjobs Logo"
-            width="600"
-            height="334"
-            sizes="(max-width: 800px) 100vw, 800px"
-          />
-        </div>
+        {left && (
+          <div>
+            <Image
+              className=""
+              src={url}
+              alt={alt}
+              width="600"
+              height="334"
+              sizes="(max-width: 800px) 100vw, 800px"
+            />
+          </div>
+        )}
 
         <div>
           <h2 className="heading-title size-default">
@@ -23,6 +25,18 @@ const Hero = () => {
           <p>Safety is our number one priority.</p>
           {/* View jobs */}
         </div>
+        {!left && (
+          <div>
+            <Image
+              className=""
+              src={url}
+              alt={alt}
+              width="600"
+              height="334"
+              sizes="(max-width: 800px) 100vw, 800px"
+            />
+          </div>
+        )}
       </div>
     </>
   );
