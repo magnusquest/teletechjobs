@@ -31,3 +31,35 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-size: 3rem; /* 96px */
+  font-weight: 900; /* extra bold */
+  color: rgb(var(--foreground-rgb));
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75); /* increased shadow for more flare */
+}
+
+h2 {
+  font-size: 2rem; /* 32px */
+  font-weight: bold;
+  color: rgb(var(--foreground-rgb));
+  margin-bottom: 1rem; /* 16px */
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: rgb(var(--foreground-rgb));
+  margin-bottom: 1rem; /* 16px */
+}
+
+a {
+  font-size: 1.2rem;
+  color: rgb(var(--foreground-rgb));
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* subtle shadow for flare */
+}
+
+.rounded-lg {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
