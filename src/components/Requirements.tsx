@@ -5,16 +5,32 @@ const Requirements = ({ url, alt }: any) => {
     <>
       <div className="flex justify-between items-center h-screen px-12">
         <div className="flex-shrink w-2/3 p-12">
-          <h2>Find your next job in the telecom industry</h2>
+          <h2>Job Requirements</h2>
           <h3>
-            At Teletechjobs, our mission is to provide fiber optic and cell
-            tower technicians with safe, fair, and professional employment
-            opportunities. We are dedicated to fostering a work environment
-            where safety is paramount, fairness is upheld, and professionalism
-            is the standard. Our commitment is to support our technicians with
-            the resources, training, and respect they deserve, ensuring they can
-            excel in their careers while contributing to the connectivity of
-            tomorrow.
+            <ul className="space-y-4">
+              <li>
+                <strong>Technical Skills:</strong>
+                <br /> Proficiency in installing, maintaining, and
+                troubleshooting fiber optic cables and cell tower equipment.
+                Some jobs require specific Certifications which we can help
+                with.
+              </li>
+              <li>
+                <strong>Physical Fitness:</strong>
+                <br /> Good physical condition with the ability to climb towers,
+                lift heavy equipment, and work in various weather conditions.
+              </li>
+              <li>
+                <strong>Safety Awareness:</strong>
+                <br /> Strong understanding and adherence to industry safety
+                standards and protocols to ensure personal and team safety.
+              </li>
+              <li>
+                <strong>Teamwork and Collaboration:</strong>
+                <br /> Ability to work well in a team-oriented environment,
+                collaborating with colleagues to achieve project goals.
+              </li>
+            </ul>
           </h3>
         </div>
         <div className="flex-grow p-4">
