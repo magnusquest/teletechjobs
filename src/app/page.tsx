@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-0">
+    <main className="flex min-h-screen flex-col items-center justify-between px-[6vw]">
       <Header />
       <Hero url="/wifi-1.svg" alt="Teletechjobs Logo" />
       <Requirements url="/workers1.png" alt="Workers" />

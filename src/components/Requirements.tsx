@@ -3,7 +3,7 @@ import Image from "next/image";
 const Requirements = ({ url, alt }: any) => {
   return (
     <>
-      <div className="flex justify-between items-center h-screen px-12">
+      <div className="flex justify-between items-center h-screen px-12 pb-12">
         <div className="flex-shrink w-2/3 p-12">
           <h2>Job Requirements</h2>
           <h3>

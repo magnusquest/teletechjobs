@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const JobApps = () => {
   return (
-    <div className="mb-32 justify-center">
+    <div className="justify-center">
       <h2 className="text-center">Available Jobs</h2>
       <div className="grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left gap-4">
         <Link
