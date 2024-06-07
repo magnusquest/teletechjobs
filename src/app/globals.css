@@ -3,20 +3,27 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 26, 28, 32;
-  --background-end-rgb: 26, 28, 32;
+  --foreground-rgb: 0, 0, 0; /* black */
+  --background-start-rgb: 255, 255, 255; /* white */
+  --background-end-rgb: 135, 206, 235; /* sky blue */
+  --accent-rgb: 255, 255, 240; /* very light beige */
+  --text-rgb: 0, 0, 0; /* navy blue */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 26, 28, 32;
-    --background-end-rgb: 26, 28, 32;
+    --foreground-rgb: 0, 0, 0; /* black */
+    --background-start-rgb: 255, 255, 255; /* white */
+    --background-end-rgb: 135, 206, 235; /* sky blue */
+    --accent-rgb: 255, 255, 240; /* very light beige */
+    --text-rgb: 0, 0, 0; /* navy blue */
   }
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
 body {
+  font-family: 'Roboto', sans-serif;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -33,27 +40,47 @@ body {
 }
 
 h1 {
+  font-family: 'Roboto', sans-serif;
   font-size: 3rem; /* 96px */
-  font-weight: 900; /* extra bold */
-  color: rgb(var(--foreground-rgb));
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.75); /* increased shadow for more flare */
+  font-weight: 800; /* extra bold */
+  color: rgb(var(--text-rgb));
+  letter-spacing: 0.1em; /* added letter spacing */
 }
-
 h2 {
+  font-family: 'Roboto', sans-serif;
   font-size: 2rem; /* 32px */
   font-weight: bold;
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-rgb));
   margin-bottom: 1rem; /* 16px */
+  text-align: center;
 }
 
 h3 {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem; /* 24px */
   font-weight: bold;
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--text-rgb));
+  margin-bottom: 1rem; /* 16px */
+}
+
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1rem; /* 16px */
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem; /* 24px */
+  font-weight: bold;
+  color: rgb(var(--text-rgb));
   margin-bottom: 1rem; /* 16px */
 }
 
 a {
+  font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
   color: rgb(var(--foreground-rgb));
   text-decoration: none;
@@ -62,4 +89,33 @@ a {
 
 .rounded-lg {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+@layer components {
+  .header-container {
+    @apply rounded-lg shadow p-4 px-8 bg-[rgb(var(--accent-rgb))];
+  }
+}
+
+h3 {
+  @apply header-container;
+}
+
+footer {
+    @apply bg-gradient-to-b from-transparent to-[rgb(var(--accent-rgb))];
+}
+
+header {
+  @apply bg-gradient-to-b from-[rgb(var(--accent-rgb))] to-transparent;
+}
+
+/* Animations */
+@keyframes fillColorChange {
+  0% { fill: #00aaff; } /* Light Blue */
+  50% { fill: #0044cc; } /* Dark Blue */
+  100% { fill: #00aaff; } /* Light Blue */
+}
+
+.animate-wifi {
+  animation: fillColorChange 5s infinite;
 }

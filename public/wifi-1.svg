@@ -9,7 +9,7 @@
 			<stop offset="100%" style="stop-color:white;stop-opacity:1" />
 		</linearGradient>
 	</defs>
-	<g fill="url(#blueToWhiteGradient)">
+	<g fill="url(#blueToWhiteGradient)" className="animate-wifi">
 		<circle cx="182.945" cy="286.681" r="41.494" />
 		<path d="M182.946,176.029c-35.658,0-69.337,17.345-90.09,46.398c-5.921,8.288-4.001,19.806,4.286,25.726
 		c3.249,2.321,6.994,3.438,10.704,3.438c5.754,0,11.423-2.686,15.021-7.724c13.846-19.383,36.305-30.954,60.078-30.954

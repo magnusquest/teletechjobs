@@ -9,26 +9,25 @@ const Requirements = ({ url, alt }: any) => {
           <h3>
             <ul className="space-y-4">
               <li>
-                <strong>Technical Skills:</strong>
-                <br /> Proficiency in installing, maintaining, and
-                troubleshooting fiber optic cables and cell tower equipment.
-                Some jobs require specific Certifications which we can help
-                with.
+                <strong>Technical Skills</strong>
+                <br /> Proficiency in installing and maintaining fiber optic
+                cables and cell tower equipment. Some jobs require
+                certifications
               </li>
               <li>
-                <strong>Physical Fitness:</strong>
+                <strong>Physical Fitness</strong>
                 <br /> Good physical condition with the ability to climb towers,
-                lift heavy equipment, and work in various weather conditions.
+                lift heavy equipment, and work in various weather conditions
               </li>
               <li>
-                <strong>Safety Awareness:</strong>
+                <strong>Safety Awareness</strong>
                 <br /> Strong understanding and adherence to industry safety
-                standards and protocols to ensure personal and team safety.
+                standards and protocols to ensure personal and team safety
               </li>
               <li>
-                <strong>Teamwork and Collaboration:</strong>
+                <strong>Teamwork and Collaboration</strong>
                 <br /> Ability to work well in a team-oriented environment,
-                collaborating with colleagues to achieve project goals.
+                collaborating with colleagues to achieve project goals
               </li>
             </ul>
           </h3>
