@@ -98,7 +98,7 @@ a {
 }
 
 h3 {
-  @apply header-container;
+  @apply header-container text-justify;
 }
 
 footer {
