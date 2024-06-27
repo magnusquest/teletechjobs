@@ -7,7 +7,6 @@
   --background-start-rgb: 255, 255, 255; /* white */
   --background-end-rgb: 135, 206, 235; /* sky blue */
   --accent-rgb: 255, 255, 240; /* very light beige */
-  --text-rgb: 0, 0, 0; /* navy blue */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,7 +15,6 @@
     --background-start-rgb: 255, 255, 255; /* white */
     --background-end-rgb: 135, 206, 235; /* sky blue */
     --accent-rgb: 255, 255, 240; /* very light beige */
-    --text-rgb: 0, 0, 0; /* navy blue */
   }
 }
 
@@ -39,14 +37,12 @@ body {
 h1 {
   font-size: 3rem; /* 96px */
   font-weight: 800; /* extra bold */
-  color: rgb(var(--text-rgb));
   letter-spacing: 0.1em; /* added letter spacing */
 }
 
 h2 {
-  font-size: 2rem; /* 32px */
+  font-size: 3rem; /* 32px */
   font-weight: bold;
-  color: rgb(var(--text-rgb));
   margin-bottom: 1rem; /* 16px */
   text-align: center;
 }
@@ -54,19 +50,17 @@ h2 {
 h3 {
   font-size: 1.5rem; /* 24px */
   font-weight: bold;
-  color: rgb(var(--text-rgb));
   margin-bottom: 1rem; /* 16px */
   @apply text-justify;
 }
 
 p {
   font-size: 1.5rem; /* 24px */
-  color: rgb(var(--text-rgb));
   margin-bottom: 1rem; /* 16px */
 }
 
 a {
-  font-size: 1.2rem;
+  font-size: 2.4rem;
   color: rgb(var(--foreground-rgb));
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* subtle shadow for flare */

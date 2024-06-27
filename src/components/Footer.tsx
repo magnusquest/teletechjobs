@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-screen h-64 p-4 text-white">
+    <footer className="w-screen h-64 p-4">
       <div className="h-2/3" />
       <div className="grid grid-cols-3 items-end justify-end">
         <div className="text-right">

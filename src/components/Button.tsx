@@ -11,9 +11,9 @@ const Button = ({ onClick }: ButtonProps) => {
     <Link
       href="#jobs"
       onClick={onClick}
-      className="rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-2/5 h-12 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
+      className="rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 max-w-96 h-24 text-white font-semibold hover:from-blue-900 hover:to-blue-700 hover:italic hover:underline transition-colors"
     >
-      Apply Now
+      Apply Now!
     </Link>
   );
 };

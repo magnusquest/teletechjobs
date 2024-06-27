@@ -30,7 +30,7 @@ const Hero = () => {
           </div>
           <div className="w-full">
             <h1>
-              Your <em>Future Job</em> Is Here
+              Your <em style={{ color: "#3558D8" }}>Future Job</em> Is Here
             </h1>
             <p>
               Our mission is to hire fiber optic and cell tower technicians with
