@@ -1,4 +1,5 @@
 import Image from "next/image";
+import WorkersUrl from "../../public/workers1.png";
 
 const Requirements = ({ url, alt }: any) => {
   return (
@@ -35,7 +36,7 @@ const Requirements = ({ url, alt }: any) => {
         <div className="flex-grow p-4">
           <div className="relative w-full h-full">
             <Image
-              src={url}
+              src={WorkersUrl}
               alt={alt}
               width="600"
               height="334"
