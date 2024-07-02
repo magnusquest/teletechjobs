@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import Form from "@/components/Form";
 import Image from "next/image";
+import WorkersUrl from "../../public/workers1.png";
 
 const JobApps = () => {
   const [showModal, setShowModal] = useState(false);

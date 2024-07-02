@@ -3,29 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0; /* black */
-  --background-start-rgb: 255, 255, 255; /* white */
-  --background-end-rgb: 135, 206, 235; /* sky blue */
-  --accent-rgb: 255, 255, 240; /* very light beige */
+  --white: #FFFFFF;
+  --black: #000000;
+  --gray: #DCD9E1;
+  --blue-green: #75E9E0 ;
+  --dark-blue: #3558D8;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 0, 0, 0; /* black */
-    --background-start-rgb: 255, 255, 255; /* white */
-    --background-end-rgb: 135, 206, 235; /* sky blue */
-    --accent-rgb: 255, 255, 240; /* very light beige */
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray: #DCD9E1;
+    --blue-green: #75E9E0 ;
+    --dark-blue: #3558D8;
   }
-}
+} 
+
 
 body {
-  color: rgb(var(--foreground-rgb));
+  color: var(--black);
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      var(--dark-blue)
     )
-    rgb(var(--background-start-rgb));
+    var(--white);
 }
 
 @layer utilities {
@@ -57,6 +60,7 @@ h3 {
 p {
   font-size: 1.5rem; /* 24px */
   margin-bottom: 1rem; /* 16px */
+  @apply text-justify;
 }
 
 a {
@@ -68,8 +72,4 @@ a {
 
 .rounded-lg {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-footer {
-    @apply bg-gradient-to-b from-transparent to-[rgb(var(--accent-rgb))];
 }
