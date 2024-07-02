@@ -1,16 +1,21 @@
 import Image from "next/image";
+import Checkmark from "@/components/Checkmark";
 
 const Requirements = () => {
   return (
     <>
-      <div className="justify-between rounded-full bg-slate-200 items-center h-screen pb-12">
+      <div className="justify-between rounded-full items-center h-auto p-12 mx-24">
         <h2>Job Requirements</h2>
         <div className="flex w-auto">
-          <ul className="space-y-4">
+          <ul className="grid grid-cols-4">
             <li>
-              <strong>Technical Skills</strong>
-              <br /> Proficiency in installing and maintaining fiber optic
-              cables and cell tower equipment. Some jobs require certifications
+              <Checkmark />
+              <h3>Technical Skills</h3>
+              <br />
+              <p>
+                Proficiency in installing and maintaining fiber optic cables and
+                cell tower equipment. Some jobs require certifications
+              </p>
             </li>
             <li>
               <strong>Physical Fitness</strong>

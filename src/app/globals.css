@@ -6,7 +6,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --gray: #DCD9E1;
-  --blue-green: #75E9E0 ;
+  --turquoise: #75E9E0 ;
   --dark-blue: #3558D8;
 }
 
@@ -15,7 +15,7 @@
     --white: #FFFFFF;
     --black: #000000;
     --gray: #DCD9E1;
-    --blue-green: #75E9E0 ;
+    --turquoise: #75E9E0 ;
     --dark-blue: #3558D8;
   }
 } 
@@ -44,16 +44,17 @@ h1 {
 }
 
 h2 {
+  color: #3558D8;
   font-size: 3rem; /* 32px */
   font-weight: bold;
   margin-bottom: 1rem; /* 16px */
   text-align: center;
+
 }
 
 h3 {
   font-size: 1.5rem; /* 24px */
   font-weight: bold;
-  margin-bottom: 1rem; /* 16px */
   @apply text-justify;
 }
 
@@ -72,4 +73,12 @@ a {
 
 .rounded-lg {
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+li {
+  background-color: var(--white);
+  border-top-right-radius: 24px;
+  padding: 1rem;
+  margin: 1rem;
+  @apply text-justify;
 }
