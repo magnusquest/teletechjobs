@@ -6,10 +6,12 @@ const Requirements = () => {
     <>
       <div className="justify-between rounded-full items-center h-auto p-12 mx-24">
         <h2>Job Requirements</h2>
-        <div className="flex w-auto">
+        <div className="flex w-auto h-auto">
           <ul className="grid grid-cols-4">
             <li>
-              <Checkmark />
+              <div className="mx-auto relative h-6 -top-12 w-1/3">
+                <Checkmark />
+              </div>
               <h3>Technical Skills</h3>
               <br />
               <p>
@@ -18,19 +20,37 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <strong>Physical Fitness</strong>
-              <br /> Good physical condition with the ability to climb towers,
-              lift heavy equipment, and work in various weather conditions
+              <div className="mx-auto relative h-6 -top-12 w-1/3">
+                <Checkmark />
+              </div>
+              <h3>Physical Fitness</h3>
+              <br />
+              <p>
+                Good physical condition with the ability to climb towers, lift
+                heavy equipment, and work in various weather conditions
+              </p>
             </li>
             <li>
-              <strong>Safety Awareness</strong>
-              <br /> Strong understanding and adherence to industry safety
-              standards and protocols to ensure personal and team safety
+              <div className="mx-auto relative h-6 -top-12 w-1/3">
+                <Checkmark />
+              </div>
+              <h3>Safety Awareness</h3>
+              <br />
+              <p>
+                Strong understanding and adherence to industry safety standards
+                and protocols to ensure personal and team safety
+              </p>
             </li>
             <li>
-              <strong>Teamwork and Collaboration</strong>
-              <br /> Ability to work well in a team-oriented environment,
-              collaborating with colleagues to achieve project goals
+              <div className="mx-auto relative h-6 -top-12 w-1/3">
+                <Checkmark />
+              </div>
+              <h3>Teamwork and Collaboration</h3>
+              <br />
+              <p>
+                Ability to work well in a team-oriented environment,
+                collaborating with colleagues to achieve project goals
+              </p>
             </li>
           </ul>
         </div>
