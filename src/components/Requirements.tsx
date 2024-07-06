@@ -4,19 +4,19 @@ import Checkmark from "@/components/Checkmark";
 const Requirements = () => {
   return (
     <>
-      <div className="justify-between rounded-full items-center h-auto p-12 mx-24">
+      <div className="rounded-full items-center h-auto px-12 mx-24">
         <h2>Job Requirements</h2>
-        <div className="flex w-auto h-auto">
+        <div className="flex w-auto h-auto pt-2">
           <ul className="grid grid-cols-4">
             <li>
               <div className="mx-auto relative h-6 -top-12 w-1/3">
                 <Checkmark />
               </div>
               <h3>Technical Skills</h3>
-              <br />
               <p>
                 Proficiency in installing and maintaining fiber optic cables and
-                cell tower equipment. Some jobs require certifications
+                cell tower equipment. Some jobs require certifications which we
+                are able to assist with obtaining
               </p>
             </li>
             <li>
@@ -24,7 +24,6 @@ const Requirements = () => {
                 <Checkmark />
               </div>
               <h3>Physical Fitness</h3>
-              <br />
               <p>
                 Good physical condition with the ability to climb towers, lift
                 heavy equipment, and work in various weather conditions
@@ -34,8 +33,7 @@ const Requirements = () => {
               <div className="mx-auto relative h-6 -top-12 w-1/3">
                 <Checkmark />
               </div>
-              <h3>Safety Awareness</h3>
-              <br />
+              <h3>Responsibility</h3>
               <p>
                 Strong understanding and adherence to industry safety standards
                 and protocols to ensure personal and team safety
@@ -45,8 +43,7 @@ const Requirements = () => {
               <div className="mx-auto relative h-6 -top-12 w-1/3">
                 <Checkmark />
               </div>
-              <h3>Teamwork and Collaboration</h3>
-              <br />
+              <h3>Cooperation</h3>
               <p>
                 Ability to work well in a team-oriented environment,
                 collaborating with colleagues to achieve project goals

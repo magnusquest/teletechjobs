@@ -55,13 +55,18 @@ h2 {
 h3 {
   font-size: 1.5rem; /* 24px */
   font-weight: bold;
-  @apply text-justify;
 }
 
 p {
   font-size: 1.5rem; /* 24px */
   margin-bottom: 1rem; /* 16px */
   @apply text-justify;
+}
+
+li p {
+  font-size: 1rem; /* 24px */
+  margin-bottom: 1rem; /* 16px */
+  @apply text-start;
 }
 
 a {
@@ -78,7 +83,9 @@ a {
 li {
   background-color: var(--white);
   border-top-right-radius: 24px;
-  padding: 1rem;
+  border-color: #000000;
+  border-width: 1px;
   margin: 1rem;
-  @apply text-justify;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  @apply p-[1rem];
 }
