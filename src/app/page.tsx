@@ -8,11 +8,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between px-[6vw]">
       <Hero />
-      <div className="w-[250vw] bg-white rounded-full p-12">
-        <div className="w-[100vw] items-center justify-center align-middle mx-auto ">
-          <Requirements />
-          <JobApps />
-        </div>
+      <div className="w-full m-42 items-center justify-center align-middle bg-white rounded-3xl py-8">
+        <Requirements />
+        <JobApps />
       </div>
       <Footer />
     </main>

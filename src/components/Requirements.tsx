@@ -9,7 +9,7 @@ const Requirements = () => {
         <div className="flex w-auto h-auto pt-2">
           <ul className="grid grid-cols-4">
             <li>
-              <div className="mx-auto relative h-6 -top-12 w-1/3">
+              <div className="mx-auto relative h-6 -top-12 w-1/4">
                 <Checkmark />
               </div>
               <h3>Technical Skills</h3>
@@ -20,7 +20,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-6 -top-12 w-1/3">
+              <div className="mx-auto relative h-6 -top-12 w-1/4">
                 <Checkmark />
               </div>
               <h3>Physical Fitness</h3>
@@ -30,7 +30,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-6 -top-12 w-1/3">
+              <div className="mx-auto relative h-6 -top-12 w-1/4">
                 <Checkmark />
               </div>
               <h3>Responsibility</h3>
@@ -40,7 +40,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-6 -top-12 w-1/3">
+              <div className="mx-auto relative h-6 -top-12 w-1/4">
                 <Checkmark />
               </div>
               <h3>Cooperation</h3>

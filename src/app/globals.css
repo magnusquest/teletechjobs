@@ -38,42 +38,47 @@ body {
 }
 
 h1 {
-  font-size: 3rem; /* 96px */
-  font-weight: 800; /* extra bold */
-  letter-spacing: 0.1em; /* added letter spacing */
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
 }
 
 h2 {
   color: #3558D8;
-  font-size: 3rem; /* 32px */
+  font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 1rem; /* 16px */
+  margin-bottom: 2rem;
   text-align: center;
-
+  @apply underline;
 }
 
 h3 {
-  font-size: 1.5rem; /* 24px */
+  font-size: 1.5rem; 
   font-weight: bold;
 }
 
 p {
-  font-size: 1.5rem; /* 24px */
-  margin-bottom: 1rem; /* 16px */
+  font-size: 1.5rem; 
+  margin-bottom: 1rem;
   @apply text-justify;
 }
 
+a p {
+  font-size: 1rem; 
+  margin-bottom: 1rem;
+  @apply text-start;
+}
+
 li p {
-  font-size: 1rem; /* 24px */
-  margin-bottom: 1rem; /* 16px */
+  font-size: 1rem; 
+  margin-bottom: 1rem;
   @apply text-start;
 }
 
 a {
-  font-size: 2.4rem;
   color: rgb(var(--foreground-rgb));
   text-decoration: none;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* subtle shadow for flare */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .rounded-lg {

@@ -15,30 +15,32 @@ const JobApps = () => {
   };
 
   return (
-    <div className="justify-center">
+    <div>
       <h2 id="jobs" className="text-center">
         Available Jobs
       </h2>
-      <div className="grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-4">
-        <div className="flex-grow p-4">
-          <div className="relative w-full h-full">
-            <Image
-              src={"/workers1.png"}
-              alt={"placeholder"}
-              width="600"
-              height="334"
-              sizes="(min-width: 600px) 100vw, 800px"
-            />
-          </div>
-        </div>
+      <div className="mx-auto grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-4">
         <Link
           href="#jobs"
           onClick={() => handleLinkClick("Fiber Optic Installer")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
         >
-          <h4 className="underline">Fiber Optic Installer</h4>
-          Install, maintain, and repair fiber optic networks while achieving
-          targets to maximize your income and advance your career
+          <h4>Fiber Optic Installer</h4>
+          <span>
+            <Image
+              src={WorkersUrl}
+              alt="Workers"
+              width={300}
+              height={200}
+              className="rounded-lg"
+            />
+            <p>
+              Install, maintain, and repair fiber optic networks while achieving
+              targets to maximize your income and advance your career
+            </p>
+          </span>
+          <p className="rounded-lg w-32 m-2 p-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors">
+            Learn More
+          </p>
         </Link>
 
         <Link
