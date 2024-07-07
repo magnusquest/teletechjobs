@@ -18,9 +18,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 justify-between items-center h-5/6 px-12 pb-12">
+      <div className="grid grid-cols-3 justify-between items-center h-5/6 px-12">
         <div className="col-span-2 justify-between items-center h-5/6 px-2 pb-12">
-          <div className="flex-shrink h-1/2">
+          <div className="flex-shrink h-1/3">
             <Image
               src="/logo_blue.svg"
               alt="Blue Logo"
@@ -30,7 +30,8 @@ const Hero = () => {
           </div>
           <div className="w-full">
             <h1>
-              Your <em style={{ color: "#3558D8" }}>Future Job</em> Is Here
+              Your <em style={{ color: "var(--dark-blue)" }}>Future Job</em> Is
+              Here
             </h1>
             <p>
               Our mission is to hire fiber optic and cell tower technicians with

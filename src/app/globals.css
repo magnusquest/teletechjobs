@@ -43,7 +43,7 @@ h1 {
 }
 
 h2 {
-  color: #3558D8;
+  color: var(--dark-blue);
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 2rem;
@@ -75,7 +75,7 @@ li p {
 }
 
 a {
-  color: rgb(var(--foreground-rgb));
+  color: rgb(var(--dark-blue));
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
