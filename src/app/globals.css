@@ -74,14 +74,10 @@ li p {
   @apply text-start;
 }
 
-a {
+a:not(:has(*)) {
   color: rgb(var(--dark-blue));
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.rounded-lg {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }
 
 li {
