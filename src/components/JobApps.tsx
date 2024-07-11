@@ -4,6 +4,8 @@ import { useState } from "react";
 import Form from "@/components/Form";
 import Image from "next/image";
 import WorkersUrl from "../../public/workers1.png";
+import Job from "@/components/Job";
+import { JobProps } from "@/components/Job";
 
 const JobApps = () => {
   const [showModal, setShowModal] = useState(false);
@@ -20,87 +22,53 @@ const JobApps = () => {
         Available Jobs
       </h2>
       <div className="mx-auto grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-4">
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Fiber Optic Installer")}
-        >
-          <h4>Fiber Optic Installer</h4>
-          <span>
-            <Image
-              src={WorkersUrl}
-              alt="Workers"
-              width={300}
-              height={200}
-              className="rounded-lg"
-            />
-            <p>
-              Install, maintain, and repair fiber optic networks while achieving
-              targets to maximize your income and advance your career
-            </p>
-          </span>
-          <p className="rounded-lg w-32 m-2 p-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors">
-            Learn More
-          </p>
-        </Link>
+        <Job
+          jobTitle="Fiber Optic Installer"
+          jobDescription="Install, maintain, and repair fiber optic networks while achieving targets to maximize your income and advance your career."
+          imgURL={WorkersUrl}
+          imgAlt="Workers installing fiber optic cables"
+          handleLinkClick={handleLinkClick}
+        />
 
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Fiber Optic Splicer")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
-        >
-          <h4 className="underline">Fiber Optic Splicer</h4>
-          We are seeking a certified Fiber Optic Splicer to join our team,
-          offering a competitive salary for expertly splicing, testing, and
-          maintaining fiber optic cables to ensure high-quality network
-          connections
-        </Link>
+        <Job
+          jobTitle="Fiber Optic Splicer"
+          jobDescription="We are seeking a certified Fiber Optic Splicer to join our team, offering a competitive salary for expertly splicing, testing, and maintaining fiber optic cables to ensure high-quality network connections."
+          imgURL={WorkersUrl} // Assuming you want to use the same image for all jobs for simplicity
+          imgAlt="Fiber Optic Splicer"
+          handleLinkClick={handleLinkClick}
+        />
 
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Generator & HVAC Technician")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
-        >
-          <h4 className="underline">Generator & HVAC Technician</h4>
-          We are looking for a Mechanical Technician specializing in electrical
-          generators and HVAC, offering performance-based compensation for
-          maintaining and repairing critical equipment to ensure optimal
-          functionality and efficiency
-        </Link>
+        <Job
+          jobTitle="Generator & HVAC Technician"
+          jobDescription="We are looking for a Mechanical Technician specializing in electrical generators and HVAC, offering performance-based compensation for maintaining and repairing critical equipment to ensure optimal functionality and efficiency."
+          imgURL={WorkersUrl} // Replace with the actual image URL if different
+          imgAlt="Generator & HVAC Technician"
+          handleLinkClick={handleLinkClick}
+        />
 
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Fiber Optic Installer Assistant")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
-        >
-          <h4 className="underline">Fiber Optic Installer Assistant</h4>
-          We are hiring a Fiber Optic Installer Assistant to support
-          installation and maintenance tasks, offering performance-based
-          compensation for assisting in the efficient deployment and upkeep of
-          fiber optic networks
-        </Link>
+        <Job
+          jobTitle="Fiber Optic Installer Assistant"
+          jobDescription="We are hiring a Fiber Optic Installer Assistant to support installation and maintenance tasks, offering performance-based compensation for assisting in the efficient deployment and upkeep of fiber optic networks."
+          imgURL={WorkersUrl} // Replace with the actual image URL if different
+          imgAlt="Fiber Optic Installer Assistant"
+          handleLinkClick={handleLinkClick}
+        />
 
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Driver")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
-        >
-          <h4 className="underline">Driver</h4>
-          We are seeking a Driver to transport equipment and materials to job
-          sites, offering performance-based compensation for timely and safe
-          deliveries essential to our operations
-        </Link>
+        <Job
+          jobTitle="Driver"
+          jobDescription="We are seeking a Driver to transport equipment and materials to job sites, offering performance-based compensation for timely and safe deliveries essential to our operations."
+          imgURL={WorkersUrl} // Replace with the actual image URL if different
+          imgAlt="Driver"
+          handleLinkClick={handleLinkClick}
+        />
 
-        <Link
-          href="#jobs"
-          onClick={() => handleLinkClick("Cell Tower Technician")}
-          className="p-4 rounded-lg items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 w-full h-full text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
-        >
-          <h4 className="underline">Cell Tower Technician</h4>
-          We are looking for a Cell Tower Maintenance Technician to perform
-          routine inspections, repairs, and upgrades on cell towers, offering
-          performance-based compensation for ensuring optimal network
-          performance and reliability
-        </Link>
+        <Job
+          jobTitle="Cell Tower Technician"
+          jobDescription="We are looking for a Cell Tower Maintenance Technician to perform routine inspections, repairs, and upgrades on cell towers, offering performance-based compensation for ensuring optimal network performance and reliability."
+          imgURL={WorkersUrl} // Replace with the actual image URL if different
+          imgAlt="Cell Tower Technician"
+          handleLinkClick={handleLinkClick}
+        />
       </div>
       <Form
         showModal={showModal}
