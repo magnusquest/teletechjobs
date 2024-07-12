@@ -33,7 +33,7 @@ const Hero = () => {
               Your <em style={{ color: "var(--dark-blue)" }}>Future Job</em> Is
               Here
             </h1>
-            <p>
+            <p id="desc">
               Our mission is to hire fiber optic and cell tower technicians with
               safe, fair, and professional employment opportunities. We are
               dedicated to fostering a work environment where safety is

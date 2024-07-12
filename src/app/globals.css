@@ -46,38 +46,36 @@ h2 {
   color: var(--dark-blue);
   font-size: 3rem;
   font-weight: bold;
-  margin-bottom: 2rem;
   text-align: center;
-  @apply underline;
+  @apply m-4 mt-0;
 }
 
 h3 {
   font-size: 1.5rem; 
   font-weight: bold;
+  text-align: center;
 }
 
 p {
+  font-size: 1rem; 
+  margin-bottom: 1rem;
+  @apply text-left;
+}
+
+#desc {
   font-size: 1.5rem; 
   margin-bottom: 1rem;
   @apply text-justify;
 }
 
-a p {
-  font-size: 1rem; 
-  margin-bottom: 1rem;
-  @apply text-start;
-}
-
-li p {
-  font-size: 1rem; 
-  margin-bottom: 1rem;
-  @apply text-start;
-}
-
-a:not(:has(*)) {
-  color: rgb(var(--dark-blue));
+#button {
   text-decoration: none;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#job {
+  @apply h-[30rem];
 }
 
 li {
@@ -87,5 +85,5 @@ li {
   border-width: 1px;
   margin: 1rem;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  @apply p-[1rem];
+  @apply p-[1rem] h-[16rem];
 }
