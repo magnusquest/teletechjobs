@@ -18,14 +18,15 @@ const Hero = () => {
 
   return (
     <>
-      <div className="grid grid-cols-3 justify-between items-center h-5/6 px-12">
-        <div className="col-span-2 justify-between items-center h-5/6 px-2 pb-12">
-          <div className="flex-shrink h-1/3">
+      <div className="flex h-auto px-[2vw] pt-12 w-11/12">
+        <div className="px-2 w-11/12 h-auto">
+          <div className="w-5/6 h-auto pb-6">
             <Image
               src="/logo_blue.svg"
               alt="Blue Logo"
               width={600}
               height={400}
+              layout="responsive"
             />
           </div>
           <div className="w-full">
@@ -33,7 +34,7 @@ const Hero = () => {
               Your <em style={{ color: "var(--dark-blue)" }}>Future Job</em> Is
               Here
             </h1>
-            <p id="desc">
+            <p id="desc" className="">
               Our mission is to hire fiber optic and cell tower technicians with
               safe, fair, and professional employment opportunities. We are
               dedicated to fostering a work environment where safety is
@@ -41,7 +42,9 @@ const Hero = () => {
               standard.
             </p>
           </div>
-          <Button onClick={handleShowModal} />
+          <div className="h-auto w-1/3 md:w-full ">
+            <Button onClick={handleShowModal} />
+          </div>
           {showModal && (
             <div className="fixed inset-0 flex items-center justify-center z-50">
               <div className="absolute inset-0 bg-black opacity-50"></div>
@@ -61,13 +64,13 @@ const Hero = () => {
             </div>
           )}
         </div>
-        <div className="flex-shrink-0">
+        <div className="w-[32vw] hidden lg:block">
           <Image
             src="/worker.png"
             alt="Worker in Blue"
             width={1000}
             height={1000}
-            layout="responsive" // Add this line
+            layout="responsive"
           />
         </div>
       </div>

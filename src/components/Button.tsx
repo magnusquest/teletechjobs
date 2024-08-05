@@ -11,9 +11,9 @@ const Button = ({ onClick }: ButtonProps) => {
     <Link
       href="#jobs"
       onClick={onClick}
-      className="rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 max-w-96 h-24 text-white font-semibold hover:from-blue-900 hover:to-blue-700 hover:italic hover:underline transition-colors"
+      className="max-w-[24vw] h-[6vw] rounded-lg flex items-center justify-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 hover:underline transition-colors"
       id="button"
-      style={{ fontSize: "2.4rem" }}
+      style={{ fontSize: "2.4vw" }}
     >
       Apply Now!
     </Link>
