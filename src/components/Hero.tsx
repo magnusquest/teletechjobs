@@ -18,8 +18,8 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex justify-between h-5/6 w-11/12">
-        <div className="px-2 w-11/12 h-auto pt-[4vw] pb-2">
+      <div className="flex justify-between mx-auto h-auto w-auto">
+        <div className="mx-auto px-2 w-11/12 h-auto pt-[4vw] pb-2">
           <div className="w-5/6 h-auto pb-[2vw]">
             <Image
               src="/logo_blue.svg"
