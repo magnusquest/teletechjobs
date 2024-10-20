@@ -6,9 +6,9 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between px-32">
+    <main className="flex min-h-screen flex-col items-center justify-between px-[8vw]">
       <Hero />
-      <div className="w-full items-center justify-center align-middle bg-white rounded-3xl py-8 shadow-black shadow-md">
+      <div className="w-full items-center justify-center align-middle bg-white rounded-3xl py-[4vw] shadow-black shadow-md">
         <Requirements />
         <JobApps />
       </div>

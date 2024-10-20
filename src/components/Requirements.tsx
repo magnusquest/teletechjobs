@@ -4,7 +4,7 @@ import Checkmark from "@/components/Checkmark";
 const Requirements = () => {
   return (
     <>
-      <div className="rounded-full items-center h-auto px-12 mx-8">
+      <div className="rounded-full items-center h-auto px-12 mx-8 hidden lg:block">
         <h2>Job Requirements</h2>
         <div className="flex w-auto h-auto pt-2">
           <ul className="grid grid-cols-4">

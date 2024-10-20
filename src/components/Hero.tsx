@@ -18,9 +18,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex h-auto px-[2vw] pt-12 w-11/12">
-        <div className="px-2 w-11/12 h-auto">
-          <div className="w-5/6 h-auto pb-6">
+      <div className="flex justify-between h-5/6 w-11/12">
+        <div className="px-2 w-11/12 h-auto pt-[4vw] pb-2">
+          <div className="w-5/6 h-auto pb-[2vw]">
             <Image
               src="/logo_blue.svg"
               alt="Blue Logo"
@@ -29,12 +29,12 @@ const Hero = () => {
               layout="responsive"
             />
           </div>
-          <div className="w-full">
+          <div className="w-auto">
             <h1>
               Your <em style={{ color: "var(--dark-blue)" }}>Future Job</em> Is
               Here
             </h1>
-            <p id="desc" className="">
+            <p id="desc" className="hidden lg:block">
               Our mission is to hire fiber optic and cell tower technicians with
               safe, fair, and professional employment opportunities. We are
               dedicated to fostering a work environment where safety is
@@ -42,7 +42,7 @@ const Hero = () => {
               standard.
             </p>
           </div>
-          <div className="h-auto w-1/3 md:w-full ">
+          <div className="h-auto w-1/3 hidden lg:block">
             <Button onClick={handleShowModal} />
           </div>
           {showModal && (
@@ -64,7 +64,7 @@ const Hero = () => {
             </div>
           )}
         </div>
-        <div className="w-[32vw] hidden lg:block">
+        <div className="w-[36vw] hidden lg:block">
           <Image
             src="/worker.png"
             alt="Worker in Blue"

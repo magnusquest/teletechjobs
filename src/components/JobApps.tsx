@@ -22,11 +22,11 @@ const JobApps = () => {
   };
 
   return (
-    <div>
-      <h2 id="jobs" className="text-center">
+    <div className="mx-[4vw]">
+      <h2 id="jobs" className="text-center hidden lg:block">
         Available Jobs
       </h2>
-      <div className="mx-auto grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-3 lg:text-left gap-4">
+      <div className="mx-auto grid lg:grid-cols-3 lg:text-left gap-4">
         <Job
           jobTitle="Fiber Optic Installer"
           jobDescription="Install, maintain, and repair fiber optic networks while advancing your career."

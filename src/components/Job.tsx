@@ -17,28 +17,25 @@ const Job: React.FC<JobProps> = ({
   handleLinkClick,
 }) => {
   return (
-    <Link
-      className="rounded-lg w-auto h-156 text-center"
-      href="#jobs"
-      onClick={() => handleLinkClick(jobTitle)}
-    >
+    <Link href="#jobs" onClick={() => handleLinkClick(jobTitle)}>
       <h3>{jobTitle}</h3>
-      <div
-        id="job"
-        className="flex flex-col justify-between p-4 border-2 border-black rounded-md"
-      >
-        <Image
-          src={imgURL}
-          alt={imgAlt}
-          width={300}
-          height={200}
-          className="rounded-lg border-2 border-black shadow-md shadow-black mx-auto" // Modified border thickness to 2
-        />
-        <p className="m-2">{jobDescription}</p>
-        <div className="relative bottom-0 grid col-span-3">
+      <div id="job" className="flex lg:flex-col p-[1vw]">
+        <div className="w-52 lg:h-auto lg:w-auto">
+          <Image
+            src={imgURL}
+            alt={imgAlt}
+            width={200}
+            height={200}
+            className="rounded-lg border-2 border-black shadow-md shadow-black mx-auto"
+            layout="responsive"
+          />
+        </div>
+        <p className="min-h-20 h-42 m-2 hidden lg:block">{jobDescription}</p>
+        <div>
+          <p className="h-12 m-[2vw] lg:hidden">{jobDescription}</p>
           <div
             id="button"
-            className="ml-auto col-end-4 rounded-lg w-32 p-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
+            className="ml-auto mr-6 rounded-lg w-36 p-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
           >
             Learn More
           </div>
