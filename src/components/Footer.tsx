@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full h-full py-4 px-12">
       <div className="hidden md:block h-1/3" />
-      <div className="lg:grid lg:grid-cols-2 items-center justify-center px-24">
+      <div className="lg:grid lg:grid-cols-2 items-center justify-center px-auto">
         <div className="flex items-center justify-center">
           <Email />
           <h4>info@teletechjobs.us</h4>

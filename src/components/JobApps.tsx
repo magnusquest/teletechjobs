@@ -22,7 +22,7 @@ const JobApps = () => {
   };
 
   return (
-    <div className="mx-[4vw] w-auto">
+    <div className="mx-[4vw]">
       <h2 id="jobs" className="text-center hidden lg:block">
         Available Jobs
       </h2>

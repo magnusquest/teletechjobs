@@ -45,11 +45,7 @@ const Job: React.FC<JobProps> = ({
   }, []);
 
   return (
-    <Link
-      className="w-full"
-      href="#jobs"
-      onClick={() => handleLinkClick(jobTitle)}
-    >
+    <Link href="#jobs" onClick={() => handleLinkClick(jobTitle)}>
       <h3>{jobTitle}</h3>
       <div id="job" className="flex lg:flex-col w-auto my-6 justify-between">
         <Image
