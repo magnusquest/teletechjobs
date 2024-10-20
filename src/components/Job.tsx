@@ -20,7 +20,7 @@ const Job: React.FC<JobProps> = ({
     <Link href="#jobs" onClick={() => handleLinkClick(jobTitle)}>
       <h3>{jobTitle}</h3>
       <div id="job" className="flex lg:flex-col p-[1vw]">
-        <div className="w-52 lg:h-auto lg:w-auto">
+        <div className="min-w-52 lg:h-auto lg:w-auto">
           <Image
             src={imgURL}
             alt={imgAlt}
@@ -30,7 +30,7 @@ const Job: React.FC<JobProps> = ({
             layout="responsive"
           />
         </div>
-        <p className="min-h-20 h-42 m-2 hidden lg:block">{jobDescription}</p>
+        <p className="min-h-20 m-2 hidden lg:block">{jobDescription}</p>
         <div>
           <p className="h-12 m-[2vw] lg:hidden">{jobDescription}</p>
           <div

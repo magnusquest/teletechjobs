@@ -7,11 +7,9 @@ const Requirements = () => {
       <div className="rounded-full items-center h-auto px-12 mx-8 hidden lg:block">
         <h2>Job Requirements</h2>
         <div className="flex w-auto h-auto pt-2">
-          <ul className="grid grid-cols-4">
+          <ul className="grid grid-cols-4 h-auto">
             <li>
-              <div className="mx-auto relative h-0 -top-12 w-1/4">
-                <Checkmark />
-              </div>
+              <Checkmark />
               <h3>Technical Skills</h3>
               <p>
                 Experience with the specific skill-set required for the job.
@@ -20,9 +18,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-0 -top-12 w-1/4">
-                <Checkmark />
-              </div>
+              <Checkmark />
               <h3>Physical Fitness</h3>
               <p>
                 Good physical condition with the ability to climb towers, lift
@@ -30,9 +26,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-0 -top-12 w-1/4">
-                <Checkmark />
-              </div>
+              <Checkmark />
               <h3>Responsibility</h3>
               <p>
                 Strong understanding and adherence to industry safety standards
@@ -40,9 +34,7 @@ const Requirements = () => {
               </p>
             </li>
             <li>
-              <div className="mx-auto relative h-0 -top-12 w-1/4">
-                <Checkmark />
-              </div>
+              <Checkmark />
               <h3>Cooperation</h3>
               <p>
                 Ability to work well in a team-oriented environment,
