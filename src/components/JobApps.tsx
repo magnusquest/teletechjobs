@@ -29,7 +29,7 @@ const JobApps = () => {
       <div className="mx-auto grid lg:grid-cols-3 lg:text-left gap-4">
         <Job
           jobTitle="Fiber Optic Installer"
-          jobDescription="Install, maintain, and repair fiber optic networks while advancing your career."
+          jobDescription="Expertly install, maintain, and repair fiber optic networks while advancing your career."
           imgURL={fiberOpticInstaller}
           imgAlt="Workers installing fiber optic cables"
           handleLinkClick={handleLinkClick}

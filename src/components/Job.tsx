@@ -19,7 +19,7 @@ const Job: React.FC<JobProps> = ({
   return (
     <Link href="#jobs" onClick={() => handleLinkClick(jobTitle)}>
       <h3>{jobTitle}</h3>
-      <div id="job" className="flex lg:flex-col p-[1vw]">
+      <div id="job" className="flex lg:flex-col my-6 space-x-4 justify-end">
         <div className="min-w-52 lg:h-auto lg:w-auto">
           <Image
             src={imgURL}
@@ -30,12 +30,12 @@ const Job: React.FC<JobProps> = ({
             layout="responsive"
           />
         </div>
-        <p className="min-h-20 m-2 hidden lg:block">{jobDescription}</p>
-        <div>
-          <p className="h-12 m-[2vw] lg:hidden">{jobDescription}</p>
+        <p className="h-20 h-42 m-2 hidden lg:block">{jobDescription}</p>
+        <div className="mx-[2vw]">
+          <p className="relative bottom-0 h-auto lg:hidden">{jobDescription}</p>
           <div
             id="button"
-            className="ml-auto mr-6 rounded-lg w-36 p-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
+            className="rounded-lg w-auto p-2 m-2 text-center bg-gradient-to-r from-blue-800 to-blue-600 text-white font-semibold hover:from-blue-900 hover:to-blue-700 transition-colors"
           >
             Learn More
           </div>
