@@ -51,12 +51,12 @@ const Job: React.FC<JobProps> = ({
       onClick={() => handleLinkClick(jobTitle)}
     >
       <h3>{jobTitle}</h3>
-      <div id="job" className="flex lg:flex-col w-auto my-6 justify-end">
+      <div id="job" className="flex lg:flex-col w-auto my-6 justify-between">
         <Image
           src={imgURL}
           alt={imgAlt}
-          width={isLargeScreen ? 400 : isMediumScreen ? 300 : 120}
-          height={isLargeScreen ? 400 : isMediumScreen ? 300 : 120}
+          width={isLargeScreen ? 500 : isMediumScreen ? 300 : 200}
+          height={isLargeScreen ? 500 : isMediumScreen ? 300 : 200}
           className="rounded-lg border-2 border-black shadow-md shadow-black mt-0 mb-auto"
         />
         <p className="h-auto w-auto m-2 hidden lg:block">{jobDescription}</p>
