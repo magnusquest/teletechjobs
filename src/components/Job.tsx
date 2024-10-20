@@ -55,8 +55,8 @@ const Job: React.FC<JobProps> = ({
         <Image
           src={imgURL}
           alt={imgAlt}
-          width={isLargeScreen ? 500 : isMediumScreen ? 300 : 200}
-          height={isLargeScreen ? 500 : isMediumScreen ? 300 : 200}
+          width={isLargeScreen ? 500 : isMediumScreen ? 300 : 120}
+          height={isLargeScreen ? 500 : isMediumScreen ? 300 : 120}
           className="rounded-lg border-2 border-black shadow-md shadow-black mt-0 mb-auto"
         />
         <p className="h-auto w-auto m-2 hidden lg:block">{jobDescription}</p>
